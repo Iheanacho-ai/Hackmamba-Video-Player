@@ -42,6 +42,7 @@ const VideoPlayer = () => {
                     onPlay = {onPlayMedia}
                     onPause = {onPauseMedia}
                     playing= {playing}
+                    
                 />
                 {
                     overlay ? <VideoOverlay onPlayMedia = {onPlayMedia} variants = {variants} /> : null

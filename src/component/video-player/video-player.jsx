@@ -43,10 +43,9 @@ const VideoPlayer = () => {
                     onPause = {onPauseMedia}
                     playing= {playing}
                     
-                />
-                {
-                    overlay ? <VideoOverlay onPlayMedia = {onPlayMedia} variants = {variants} /> : null
-                }
+                /> 
+                <VideoOverlay onPlayMedia = {onPlayMedia} variants = {variants} overlay={overlay}/>
+                
             </div>
         </div>
 

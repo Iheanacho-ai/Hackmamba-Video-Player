@@ -17,7 +17,7 @@ const VideoOverlay = ({onPlayMedia, variants, overlay }) => (
                     variants = {variants}
                 >
                     <h3>dépôt: tenant une fleur</h3>
-                    <div className = 'video-ovelay-play-icon'>
+                    <div className = 'video-overlay-play-icon'>
                         <div className = 'play-icon'>
                             <FontAwesomeIcon icon="play-circle"   />
                         </div>

@@ -2,19 +2,29 @@
     box-sizing: border-box;
     width: 640px;
     height: 360px;
-    background-color: rgba(0,0,0,0.6);
     position: absolute;
     top: 0;
     bottom: 0;
-    text-align: center;
     color: #fff;
     font-family: 'Nunito Sans', sans-serif;
-    padding: 30px;
+    
+  
 }
-.video-overlay-play-icon{
-    display: flex;
-    justify-content: center;
+.video-overlay-container{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.822);
+    margin-top: 0;
+    text-align: left;
+    padding: 30px 30px 30px 30px;
+    box-sizing: border-box;
 
+}
+.play-btn{
+    width: 90%;
+    height: 30px;
+    margin: 0 auto;
+    text-align: left;
 }
 .play-icon{
     width: 50px;

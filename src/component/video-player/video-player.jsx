@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useEffect } from 'react';
 import ReactPlayer from 'react-player';
 import VideoOverlay from '../video-overlay/video-overlay';
 import './video-player';
@@ -7,6 +8,9 @@ const VideoPlayer = () => {
     const [overlay, showOverlay] = useState(true); 
     const [playing, setPlaying] = useState(false); 
     const [controls, setControls] = useState(false);
+
+
+
 
     const onPlayMedia = () => {
         showOverlay(false);
@@ -18,6 +22,14 @@ const VideoPlayer = () => {
        showOverlay(true)
        setControls(false);
     }
+    
+    useEffect(() => {
+        setTimeout(() => 
+        showOverlay(false), 5000)
+    }, [])
+
+
+    
 
     const variants = {
         hidden: {
@@ -45,7 +57,7 @@ const VideoPlayer = () => {
                     playing= {playing}
                     
                 /> 
-                <VideoOverlay onPlayMedia = {onPlayMedia} variants = {variants} overlay={overlay}/>
+                <VideoOverlay onPlayMedia = {onPlayMedia} variants = {variants} overlay={overlay} />
                 
             </div>
         </div>

@@ -1,5 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { motion, AnimatePresence } from "framer-motion"
 import './video-overlay.css';
 
@@ -16,11 +15,10 @@ const VideoOverlay = ({onPlayMedia, variants, overlay }) => (
                     exit = {{opacity: 0}}
                     variants = {variants}
                 >
-                    <h3>dépôt: tenant une fleur</h3>
-                    <div className = 'video-overlay-play-icon'>
-                        <div className = 'play-icon'>
-                            <FontAwesomeIcon icon="play-circle"   />
-                        </div>
+                    <div className= 'video-overlay-container'>
+                        <h2>dépôt: tenant une fleur</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, eos fugiat! Nam veritatis voluptatem fuga omnis dicta est molestias numquam fugiat odio maxime, sed veniam dolores rem iusto laudantium delectus!</p>
+                        <button className= 'play-btn'  onClick= {onPlayMedia}>Play</button>
                     </div>
                 </motion.div>
 

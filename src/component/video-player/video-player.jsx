@@ -13,7 +13,7 @@ const VideoPlayer = () => {
 
 
     const onPlayMedia = () => {
-        showOverlay(false);
+        showOverlay(false)
         setPlaying(true);
         setControls(true);
     }
@@ -24,12 +24,25 @@ const VideoPlayer = () => {
     }
     
     useEffect(() => {
-        setTimeout(() => 
-        showOverlay(false), 5000)
+        setTimeout(() => {
+            setPlaying(true)
+        }, 3000);
+          
+
+    }, [])
+    
+    useEffect(() => {
+
+        setTimeout(() => {
+            showOverlay(false)
+            setControls(true)
+
+        }, 5000);
+        
+          
+
     }, [])
 
-
-    
 
     const variants = {
         hidden: {
@@ -52,9 +65,9 @@ const VideoPlayer = () => {
                     url = 'https://res.cloudinary.com/amarachi-2812/video/upload/v1622736920/production_ID_4456999_gr6iy4.mp4' 
                     controls = {controls}
                     pip= {true} 
+                    playing= {playing}
                     onPlay = {onPlayMedia}
                     onEnded = {onEndMedia}
-                    playing= {playing}
                     
                 /> 
                 <VideoOverlay onPlayMedia = {onPlayMedia} variants = {variants} overlay={overlay} />

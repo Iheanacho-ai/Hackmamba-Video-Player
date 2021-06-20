@@ -63,14 +63,13 @@ const VideoPlayer = () => {
                 <ReactPlayer 
                     className = 'react-player' 
                     url = 'https://res.cloudinary.com/amarachi-2812/video/upload/v1622736920/production_ID_4456999_gr6iy4.mp4' 
-                    controls = {controls}
+                    controls = {true}
                     pip= {true} 
-                    playing= {playing}
+                    playing= {true}
                     onPlay = {onPlayMedia}
                     onEnded = {onEndMedia}
                     
                 /> 
-                <VideoOverlay onPlayMedia = {onPlayMedia} variants = {variants} overlay={overlay} />
                 
             </div>
         </div>

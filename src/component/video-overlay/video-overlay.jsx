@@ -12,7 +12,7 @@ const VideoOverlay = ({onPlayMedia, variants, overlay }) => (
                     onClick = {onPlayMedia}
                     initial = "hidden"
                     animate = "visible"
-                    exit = {{opacity: 0}}
+                    exit = "hidden"
                     variants = {variants}
                 >
                     <div className= 'video-overlay-container'>

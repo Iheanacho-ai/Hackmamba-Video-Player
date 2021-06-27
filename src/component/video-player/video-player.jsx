@@ -33,7 +33,10 @@ const VideoPlayer = () => {
 
   const variants = {
     hidden: {
-      opacity: 0
+      opacity: 0,
+      transition: {
+        duration: 0.7
+      }
     },
     visible: {
       opacity: 1,
